@@ -1,3 +1,6 @@
 tdl_webserver/db.sqlite3
 tdl_webserver/__pycache__/
+<<<<<<< HEAD
 tdl_webserver/helloworld.py
+=======
+>>>>>>> a8dd99ee3ef3906d7e7f375672ed7d82d0825cfe
