@@ -7,9 +7,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
+
+EXPOSE 8000
 
 CMD ["python","manage.py","migrate"]
 CMD ["python","manage.py","runserver"]
-
-EXPOSE 8000

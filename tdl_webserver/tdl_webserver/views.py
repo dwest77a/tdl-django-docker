@@ -1,4 +1,4 @@
-from django.views.generic.base import View
+from django.views.generic.base import TemplateView
 
-class Intro(View):
+class Intro(TemplateView):
     template_name = 'intro.html'
