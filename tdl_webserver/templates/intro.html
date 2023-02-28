@@ -1,1 +1,34 @@
-<h1>Welcome to my Docker Django Server!</h1>
+{% load static %}
+<link rel="stylesheet" href="https://artefacts.ceda.ac.uk/themes/orgtheme_ceda_serv/0.2/4/flatly/bootstrap.css" media="screen">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="https://artefacts.ceda.ac.uk/themes/orgtheme_ceda_serv/0.2/_assets/css/custom.min.css">
+<link rel="stylesheet" href="https://artefacts.ceda.ac.uk/themes/orgtheme_ceda_serv/0.2/_assets/css/org-custom.css">
+
+<link rel="shortcut icon" type="image/ico" href="{% static 'img/favicon.ico' %}"/>
+<link href="{% static 'common/main.css' %}" rel="stylesheet">
+
+<div class="hotbar">
+    <h1>TDL Manager Tool</h1>
+    <p>Version 2.0 - Daniel Westwood - 28/02/2023</p>
+</div>
+
+<div style="padding-left:5%; padding-right: 5%;">
+    <h5 style="text-align: left;">Current To Do List (TDL) - {{time}}</h5>
+    <br>
+    {% if not items %}
+        <p><em>You currently have no items (Wow, such empty!)</em></p>
+    {% else %}
+        <table>
+            <thead>
+                <tr>
+                    <td style="width:10%;">ID</td>
+                    <td style="width:25%;">Project</td>
+                    <td style="width:10%;">Format</td>
+                    <td style="width:45%;">Current</td>
+                    <td style="width:10%;">Stage</td>
+                    <td style="width:10%;">Dependencies</td>
+                </tr>
+            </thead>
+        </table>
+    {% endif %}
+</div>
