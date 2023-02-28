@@ -1,0 +1,31 @@
+body {
+    padding-top: 25px;
+    background-color: rgb(38, 44, 76);
+}
+
+* {
+    color: white;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.hotbar {
+    background-color: purple;
+}
+
+.centerdiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
